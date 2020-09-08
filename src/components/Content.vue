@@ -32,7 +32,7 @@ export default {
   methods: {
     getProduct () {
       axios
-        .get('http://localhost:3000/product')
+        .get('http://localhost:3002/product')
         .then((response) => {
           this.product = response.data.data
         })
@@ -41,7 +41,7 @@ export default {
         })
     },
     getSearch (value) {
-      axios('http://localhost:3000/product?search=' + value)
+      axios('http://localhost:3002/product?search=' + value)
         .then((response) => {
           this.product = response.data.data
         }).catch((err) => {
