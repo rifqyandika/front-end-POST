@@ -11,8 +11,8 @@
         </div>
       </span>
     </nav>
-    <div class="is-item container">
-      <img src="assets/img/sidebar.png" alt />
+    <div class="is-item container text-center">
+      <img src="../assets/img/cart.png" alt />
       <h6>Your cart is empty</h6>
       <p>Please add some items from the menu</p>
     </div>
