@@ -5,7 +5,8 @@
       <h5 class="mb-0">{{product.name}}</h5>
       <h3>Rp. {{product.price}}</h3>
       <div class="action text-center">
-        <button @click="getUpdate()" class="btn btn-primary mr-1">Detail</button>
+        <router-link @click="getUpdate()" :to="`/detail/`+ product.id_product" class="btn btn-primary mr-1">Edit</router-link>
+        <button @click="getUpdate()" class="btn btn-info mr-1"><b-icon icon="cart-plus"></b-icon></button>
         <button @click="getid()" class="btn btn-danger">Delete</button>
       </div>
     </div>
@@ -28,7 +29,9 @@ export default {
         })
     },
     getUpdate () {
-      alert(this.product.id_product)
+      alert(
+        this.product.name
+      )
     }
   }
 }
